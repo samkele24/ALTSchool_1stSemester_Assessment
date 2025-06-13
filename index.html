@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on mobile devices -->
+  <title>Calculator</title> <!-- Title of the page -->
+  <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+  <!-- The main calculator container -->
+  <div class="calculator">
+    
+    <!-- Display area to show the input or result -->
+    <div class="display">
+      <input type="text" id="result" disabled /> <!-- Read-only input field that displays the result -->
+    </div>
+
+    <!-- Buttons for calculator operations -->
+    <div class="buttons">
+      <button class="btn" onclick="clearResult()">C</button> <!-- Clear button -->
+      <button class="btn" onclick="appendToResult('7')">7</button>
+      <button class="btn" onclick="appendToResult('8')">8</button>
+      <button class="btn" onclick="appendToResult('9')">9</button>
+      <button class="btn" onclick="appendToResult('+')">+</button>
+      <button class="btn" onclick="appendToResult('4')">4</button>
+      <button class="btn" onclick="appendToResult('5')">5</button>
+      <button class="btn" onclick="appendToResult('6')">6</button>
+      <button class="btn" onclick="appendToResult('-')">-</button>
+      <button class="btn" onclick="appendToResult('1')">1</button>
+      <button class="btn" onclick="appendToResult('2')">2</button>
+      <button class="btn" onclick="appendToResult('3')">3</button>
+      <button class="btn" onclick="appendToResult('*')">×</button>
+      <button class="btn" onclick="appendToResult('0')">0</button>
+      <button class="btn" onclick="appendToResult('.')">.</button>
+      <button class="btn" onclick="calculateResult()">=</button> <!-- Equal button to calculate the result -->
+      <button class="btn" onclick="appendToResult('/')">÷</button>
+      <button class="btn" onclick="backspace()">←</button> <!-- Backspace button to remove last character -->
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* General styles for the page */
+body {
+  font-family: Arial, sans-serif; /* Set the font for the page */
+  display: flex; /* Use Flexbox to center content */
+  justify-content: center; /* Align the content horizontally in the center */
+  align-items: center; /* Align the content vertically in the center */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f4f4f4; /* Light gray background color */
+  margin: 0; /* Remove default margins */
+}
+
+/* Styling for the calculator container */
+.calculator {
+  width: 320px; /* Fixed width for the calculator */
+  background-color: white; /* White background for the calculator */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  overflow: hidden; /* Hide anything that overflows the container */
+}
+
+/* Styling for the display area */
+.display {
+  background-color: #222; /* Dark background for the display */
+  padding: 20px; /* Add padding inside the display */
+  text-align: right; /* Align text to the right */
+}
+
+/* Input field where the result is displayed */
+#result {
+  width: 100%; /* Take up the full width */
+  padding: 10px; /* Add padding for a better look */
+  font-size: 2rem; /* Increase the font size */
+  background-color: #222; /* Dark background */
+  color: white; /* White text */
+  border: none; /* No border */
+  text-align: right; /* Align text to the right */
+}
+
+/* Styling for the buttons */
+.buttons {
+  display: grid; /* Use CSS Grid for button layout */
+  grid-template-columns: repeat(4, 1fr); /* Create a grid with 4 equal columns */
+  gap: 10px; /* Add space between buttons */
+  padding: 20px; /* Add padding inside the buttons container */
+}
+
+/* General button styles */
+button {
+  background-color: #f1f1f1; /* Light background color for buttons */
+  border: 1px solid #ccc; /* Border for buttons */
+  padding: 20px; /* Add padding inside the buttons */
+  font-size: 1.5rem; /* Increase font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.2s; /* Add smooth background color transition */
+  border-radius: 5px; /* Rounded corners for buttons */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #ddd; /* Change background color on hover */
+}
+
+/* Active button effect */
+button:active {
+  background-color: #bbb; /* Darker background when button is clicked */
+}
+
+/* Remove outline when button is focused (optional) */
+button:focus {
+  outline: none;
+}
+
+/* Styling for the disabled button */
+button:disabled {
+  background-color: #e6e6e6; /* Lighter color for disabled button */
+  cursor: not-allowed; /* Show a "not-allowed" cursor */
+}
+
+/* Responsive design: Adjust layout for smaller screens */
+@media (max-width: 600px) {
+  .calculator {
+    width: 100%; /* Calculator takes up full width on small screens */
+    margin: 20px; /* Add margin around the calculator */
+  }
+
+  button {
+    font-size: 1.2rem; /* Reduce button font size */
+  }
+
+  #result {
+    font-size: 1.5rem; /* Reduce result font size */
+  }
+}
